@@ -1,0 +1,18 @@
+---
+name: Conformance
+
+on:
+  pull_request_target:
+
+jobs:
+  conformance:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Conform
+        uses: talos-systems/conform@v0.1.0-alpha.20
