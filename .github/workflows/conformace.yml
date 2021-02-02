@@ -11,9 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 100
           ref: ${{ github.event.pull_request.head.sha }}
-      - run: git fetch --unshallow
 
       - name: Conform
         uses: talos-systems/conform@v0.1.0-alpha.20
