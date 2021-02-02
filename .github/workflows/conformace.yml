@@ -13,6 +13,8 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.sha }}
+      - run: |
+          git fetch origin +refs/heads/main:refs/heads/main --unshallow
 
       - name: Conform
         uses: talos-systems/conform@v0.1.0-alpha.20
