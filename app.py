@@ -4,7 +4,7 @@ import datetime
 
 print("hello world")
 
-assert (True == 1), "is not true"
+assert (True == 0), "is not true"
 
 print("eli was here")
 print(f"{datetime.datetime.now}")
