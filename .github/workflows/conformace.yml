@@ -16,6 +16,6 @@ jobs:
 
       - name: Conform
         uses: talos-systems/conform@v0.1.0-alpha.20
+        rev: master
         with:
-          rev: master
           args: enforce --commit-ref=main
