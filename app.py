@@ -10,3 +10,4 @@ assert (True == 0), "is not true"
 
 print("eli was here")
 print(f"{datetime.datetime.now}")
+app = flask.Flask()
