@@ -6,7 +6,7 @@ authors = ["Eliecer Daza <eliecer.daza@globant.com>"]
 
 [tool.poetry.dependencies]
 python = "3.6.11"
-botocore = "1.5.12"
+botocore = "1.21.39"
 
 [tool.poetry.dev-dependencies]
 
